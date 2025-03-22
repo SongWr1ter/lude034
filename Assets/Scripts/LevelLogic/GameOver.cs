@@ -16,11 +16,13 @@ public class GameOver : MonoBehaviour
     [SerializeField] private float maxIntensity;
     [SerializeField] private float openTime;
     [SerializeField]private Transform player;
+    [SerializeField]private List<GameObject> starters = new List<GameObject>();
     private bool flag = false;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         Invoke("Open",openTime);
+        Invoke("Show",openTime - 0.2f);
     }
 
     private void OnEnable()
@@ -110,5 +112,13 @@ public class GameOver : MonoBehaviour
         spotLight.enabled = true;
         globalLight.intensity = 0.04f;
         SoundManager.PlayAudio("Open");
+    }
+
+    public void Show()
+    {
+        foreach (var obj in starters)
+        {
+            obj.SetActive(true);
+        }
     }
 }

@@ -11,13 +11,9 @@ public class ObstacleMove : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
         rb2d.velocity = new Vector2(moveSpeed, 0);
     }
+    
 
     void Despawn()
     {
