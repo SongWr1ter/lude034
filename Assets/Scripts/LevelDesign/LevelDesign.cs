@@ -14,6 +14,7 @@ public class LevelDesign : MonoBehaviour
     private Dictionary<ObstacleType,GameObject> obstaclePrefabDicts = new Dictionary<ObstacleType, GameObject>();
     private float timer;
     private int currentWaveIndex;
+    private bool winFlag;
     private void Awake()
     {
         for (int i = 0; i < transform.childCount; i++)
@@ -58,12 +59,14 @@ public class LevelDesign : MonoBehaviour
                 currentWaveIndex++;
             }
 
-            if (currentWaveIndex >= waveList.Count)
+            if (currentWaveIndex >= waveList.Count && winFlag == false)
             {
                 MessageCenter.SendMessage(new CommonMessage
                 {
-                    
+                    intParam = 0,
+                    content = null,
                 },MESSAGE_TYPE.WIN);
+                winFlag = true;
             }
         }
         

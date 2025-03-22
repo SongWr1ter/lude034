@@ -49,10 +49,14 @@ public class PlayerControl : MonoBehaviour
             currentHp = 0;
             Instantiate(DieVFX, transform.position, Quaternion.identity);
             //todo:游戏输了
+            MessageCenter.SendMessage(new CommonMessage(),MESSAGE_TYPE.LOSE);
+            gameObject.SetActive(false);
+            SoundManager.PlayAudio("Death");
         }
         else
         {
             Instantiate(HurtVFX, transform.position, Quaternion.identity);
+            SoundManager.PlayAudio("Hit");
         }
     }
 
