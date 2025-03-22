@@ -18,14 +18,14 @@ MonoBehaviour:
     speed: 10
     existTime: 0.8
   - rowIndex: 0
-    obstacleType: 1
+    obstacleType: 0
     speed: 5
     existTime: 1
   - rowIndex: 1
-    obstacleType: 1
+    obstacleType: 2
     speed: 2
     existTime: 1.5
   - rowIndex: 2
-    obstacleType: 1
+    obstacleType: 3
     speed: 5
     existTime: 2
