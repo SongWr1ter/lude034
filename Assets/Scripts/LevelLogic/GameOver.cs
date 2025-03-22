@@ -14,11 +14,13 @@ public class GameOver : MonoBehaviour
     [SerializeField,Tooltip("玩家移动速度")] private float playerSpeed;
     [SerializeField, Tooltip("时间步")] private float timeStep;
     [SerializeField] private float maxIntensity;
+    [SerializeField] private float openTime;
     [SerializeField]private Transform player;
     private bool flag = false;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        Invoke("Open",openTime);
     }
 
     private void OnEnable()
@@ -101,5 +103,12 @@ public class GameOver : MonoBehaviour
     private static float f2(float x)
     {
         return Mathf.Exp((3 * x * x - 2 * x * x * x)/10f)/10f;
+    }
+
+    public void Open()
+    {
+        spotLight.enabled = true;
+        globalLight.intensity = 0.04f;
+        SoundManager.PlayAudio("Open");
     }
 }

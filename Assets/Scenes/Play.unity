@@ -340,7 +340,7 @@ MonoBehaviour:
   distance: 0.25
   speed: 3
   right: 0
-  fadeTime: 3
+  fadeTime: 6
   fadeSpeed: 5
 --- !u!212 &196520215
 SpriteRenderer:
@@ -362,7 +362,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1091,6 +1091,7 @@ MonoBehaviour:
   playerSpeed: 0.01
   timeStep: 0.0001
   maxIntensity: 11
+  openTime: 1.5
   player: {fileID: 0}
 --- !u!4 &580457449
 Transform:
@@ -1275,7 +1276,7 @@ MonoBehaviour:
   distance: 0.25
   speed: 3
   right: 1
-  fadeTime: 3
+  fadeTime: 6
   fadeSpeed: 5
 --- !u!212 &606387191
 SpriteRenderer:
@@ -1297,7 +1298,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1820,7 +1821,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796232767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -2263,7 +2264,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.04
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000023d56c53b3cadeaf379f90f4
