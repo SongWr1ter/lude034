@@ -5,7 +5,8 @@ using UnityEngine;
 
 public enum MESSAGE_TYPE
 {
-    GET_HURT
+    GET_HURT,
+    WIN,
 }
 public struct CommonMessage
 {

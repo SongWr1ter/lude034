@@ -57,12 +57,21 @@ public class LevelDesign : MonoBehaviour
                 // 移动到下一个波次
                 currentWaveIndex++;
             }
+
+            if (currentWaveIndex >= waveList.Count)
+            {
+                MessageCenter.SendMessage(new CommonMessage
+                {
+                    
+                },MESSAGE_TYPE.WIN);
+            }
         }
         
     }
 
     public void SpawnObstacle(ObstacleType type,ObstacleWave.RowIndex rowIndex,float speed = 1.0f)
     {
+        if(type == ObstacleType.None) return;
         GameObject obj = Instantiate(obstaclePrefabDicts[type], spawnRows[(int)rowIndex].position, Quaternion.identity);
         obj.GetComponent<ObstacleMove>().SetMoveSpeed(speed);
     }

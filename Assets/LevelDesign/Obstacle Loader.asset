@@ -21,3 +21,5 @@ MonoBehaviour:
     obstacleType: 2
   - obstaclePrefab: {fileID: 3440173421228208297, guid: 7697270abd5e06943a6467368de18e6c, type: 3}
     obstacleType: 3
+  - obstaclePrefab: {fileID: 0}
+    obstacleType: 4
