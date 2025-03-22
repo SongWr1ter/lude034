@@ -47,3 +47,6 @@ TagManager:
   - name: light
     uniqueID: 2950613683
     locked: 0
+  - name: debug
+    uniqueID: 4103118647
+    locked: 0
