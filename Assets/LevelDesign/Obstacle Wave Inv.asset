@@ -30,11 +30,23 @@ MonoBehaviour:
     speed: 5
     existTime: 22
   - rowIndex: 0
+    obstacleType: 0
+    speed: 5
+    existTime: 26
+  - rowIndex: 1
+    obstacleType: 2
+    speed: 5
+    existTime: 26.5
+  - rowIndex: 2
     obstacleType: 1
+    speed: 5
+    existTime: 27
+  - rowIndex: 0
+    obstacleType: 2
     speed: 5
     existTime: 31
   - rowIndex: 1
-    obstacleType: 1
+    obstacleType: 0
     speed: 5
     existTime: 31.5
   - rowIndex: 2
@@ -44,24 +56,12 @@ MonoBehaviour:
   - rowIndex: 0
     obstacleType: 3
     speed: 5
-    existTime: 41
-  - rowIndex: 1
-    obstacleType: 3
-    speed: 5
-    existTime: 41.5
-  - rowIndex: 2
-    obstacleType: 3
-    speed: 5
-    existTime: 42
+    existTime: 36
   - rowIndex: 0
     obstacleType: 3
     speed: 5
-    existTime: 46
+    existTime: 37
   - rowIndex: 0
     obstacleType: 3
     speed: 5
-    existTime: 46.5
-  - rowIndex: 0
-    obstacleType: 3
-    speed: 5
-    existTime: 47
+    existTime: 38

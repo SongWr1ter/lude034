@@ -34,38 +34,38 @@ MonoBehaviour:
     speed: 5
     existTime: 26
   - rowIndex: 1
-    obstacleType: 0
+    obstacleType: 2
     speed: 5
     existTime: 26.5
   - rowIndex: 2
-    obstacleType: 0
+    obstacleType: 1
     speed: 5
     existTime: 27
   - rowIndex: 0
     obstacleType: 2
     speed: 5
+    existTime: 31
+  - rowIndex: 1
+    obstacleType: 0
+    speed: 5
+    existTime: 31.5
+  - rowIndex: 2
+    obstacleType: 1
+    speed: 5
+    existTime: 32
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
     existTime: 36
   - rowIndex: 1
-    obstacleType: 2
-    speed: 5
-    existTime: 36.5
-  - rowIndex: 2
-    obstacleType: 2
+    obstacleType: 3
     speed: 5
     existTime: 37
-  - rowIndex: 0
+  - rowIndex: 2
     obstacleType: 3
     speed: 5
-    existTime: 51
-  - rowIndex: 0
-    obstacleType: 3
-    speed: 5
-    existTime: 51.5
-  - rowIndex: 0
-    obstacleType: 3
-    speed: 5
-    existTime: 52
+    existTime: 38
   - rowIndex: 0
     obstacleType: 4
     speed: 5
-    existTime: 60
+    existTime: 44
