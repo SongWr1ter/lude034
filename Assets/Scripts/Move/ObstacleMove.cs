@@ -15,9 +15,9 @@ public class ObstacleMove : MonoBehaviour
     }
     
 
-    void Despawn()
+    public void Despawn()
     {
-        Destroy(gameObject,8f);
+        Destroy(gameObject);
     }
 
     public void SetMoveSpeed(float moveSpeed)

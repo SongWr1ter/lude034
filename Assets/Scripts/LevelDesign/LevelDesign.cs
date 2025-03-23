@@ -76,6 +76,6 @@ public class LevelDesign : MonoBehaviour
     {
         if(type == ObstacleType.None) return;
         GameObject obj = Instantiate(obstaclePrefabDicts[type], spawnRows[(int)rowIndex].position, Quaternion.identity);
-        obj.GetComponent<ObstacleMove>().SetMoveSpeed(speed);
+        obj.GetComponent<ObstacleMove>().SetMoveSpeed(speed * Mathf.Sign(transform.localScale.x));
     }
 }
