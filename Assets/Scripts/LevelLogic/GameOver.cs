@@ -18,11 +18,13 @@ public class GameOver : MonoBehaviour
     [SerializeField]private Transform player;
     [SerializeField]private List<GameObject> starters = new List<GameObject>();
     private bool flag = false;
+    private int orbitalCount;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         Invoke("Open",openTime);
         Invoke("Show",openTime - 0.2f);
+        orbitalCount = FindObjectsOfType<LevelDesign>().Length;
     }
 
     private void OnEnable()
@@ -47,8 +49,12 @@ public class GameOver : MonoBehaviour
 
     public void Win(CommonMessage message)
     {
-        StartCoroutine(WinVFX());
-        StartCoroutine(PlayerMove());
+        orbitalCount -= 1;
+        if (orbitalCount <= 0)
+        {
+            StartCoroutine(WinVFX());
+            StartCoroutine(PlayerMove());
+        }
     }
 
     IEnumerator WinVFX()
