@@ -18,7 +18,7 @@ public class GoBlank : MonoBehaviour
         timer += Time.fixedDeltaTime;
         if (timer >= fadeTime)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(5f, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(fadeSpeed, 0);
         }
     }
 }

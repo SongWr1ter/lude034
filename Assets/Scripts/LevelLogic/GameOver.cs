@@ -19,6 +19,12 @@ public class GameOver : MonoBehaviour
     [SerializeField]private List<GameObject> starters = new List<GameObject>();
     private bool flag = false;
     private int orbitalCount;
+
+    private void Awake()
+    {
+        spotLight.enabled = false;
+    }
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
