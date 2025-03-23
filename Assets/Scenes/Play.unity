@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRows: []
   obstacleLoader: {fileID: 11400000, guid: 81f6f6d44535b24428ef3df76784f3ae, type: 2}
-  obstacleWave: {fileID: 11400000, guid: 7a24ad1e9b504a4429ffe8371a84f67d, type: 2}
+  obstacleWave: {fileID: 11400000, guid: 5c5ca69c270d5ed47a4aae10a447cdc6, type: 2}
   canSpawn: 1
 --- !u!4 &556838321
 Transform:
@@ -1575,8 +1575,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   globalLight: {fileID: 1311495249}
   spotLight: {fileID: 796232768}
-  playerSpeed: 0.01
+  playerSpeed: 0.033
   timeStep: 0.0001
+  movetimeStep: 0.005
   maxIntensity: 11
   openTime: 1.5
   player: {fileID: 0}
@@ -2240,7 +2241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRows: []
   obstacleLoader: {fileID: 11400000, guid: 81f6f6d44535b24428ef3df76784f3ae, type: 2}
-  obstacleWave: {fileID: 11400000, guid: 4db1dcd7cc6f1444cb7a6cd28a9212f1, type: 2}
+  obstacleWave: {fileID: 11400000, guid: 5c5ca69c270d5ed47a4aae10a447cdc6, type: 2}
   canSpawn: 1
 --- !u!1 &693851486
 GameObject:

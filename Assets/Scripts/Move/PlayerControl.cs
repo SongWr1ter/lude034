@@ -70,12 +70,25 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (debug)
         {
-            currentHp += 1;
-            currentHp = Mathf.Clamp(currentHp, 0, maxHp);
-            float size = Hp2size[Mathf.RoundToInt(currentHp)];
-            transform.localScale = new Vector3(size, size, 1f);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                currentHp += 1;
+                currentHp = Mathf.Clamp(currentHp, 0, maxHp);
+                float size = Hp2size[Mathf.RoundToInt(currentHp)];
+                transform.localScale = new Vector3(size, size, 1f);
+            }
+
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                Time.timeScale -= 0.1f;
+            }
+            
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                Time.timeScale += 0.1f;
+            }
         }
     }
 

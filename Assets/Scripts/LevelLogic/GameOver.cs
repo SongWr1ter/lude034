@@ -13,6 +13,7 @@ public class GameOver : MonoBehaviour
 
     [SerializeField,Tooltip("玩家移动速度")] private float playerSpeed;
     [SerializeField, Tooltip("时间步")] private float timeStep;
+    [SerializeField, Tooltip("move时间步")] private float movetimeStep;
     [SerializeField] private float maxIntensity;
     [SerializeField] private float openTime;
     [SerializeField]private Transform player;
@@ -104,7 +105,7 @@ public class GameOver : MonoBehaviour
         {
             Vector3 dir = (spotLight.transform.position + Vector3.up * 5.0f) - player.position;
             player.Translate(dir.normalized * (playerSpeed));
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(movetimeStep);
             if(dir.magnitude < 0.1f) yield break;
         }
     }
