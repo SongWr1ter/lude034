@@ -13,23 +13,59 @@ MonoBehaviour:
   m_Name: Obstacle Wave
   m_EditorClassIdentifier: 
   waves:
-  - rowIndex: 1
-    obstacleType: 1
-    speed: 10
-    existTime: 0.8
   - rowIndex: 0
     obstacleType: 0
     speed: 5
-    existTime: 1
+    existTime: 10
   - rowIndex: 1
-    obstacleType: 2
-    speed: 2
-    existTime: 1.5
+    obstacleType: 1
+    speed: 5
+    existTime: 14
   - rowIndex: 2
+    obstacleType: 2
+    speed: 5
+    existTime: 18
+  - rowIndex: 0
     obstacleType: 3
     speed: 5
-    existTime: 2
+    existTime: 22
+  - rowIndex: 0
+    obstacleType: 0
+    speed: 5
+    existTime: 26
+  - rowIndex: 1
+    obstacleType: 0
+    speed: 5
+    existTime: 26.5
   - rowIndex: 2
+    obstacleType: 0
+    speed: 5
+    existTime: 27
+  - rowIndex: 0
+    obstacleType: 2
+    speed: 5
+    existTime: 36
+  - rowIndex: 1
+    obstacleType: 2
+    speed: 5
+    existTime: 36.5
+  - rowIndex: 2
+    obstacleType: 2
+    speed: 5
+    existTime: 37
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 51
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 51.5
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 52
+  - rowIndex: 0
     obstacleType: 4
     speed: 5
-    existTime: 2
+    existTime: 60

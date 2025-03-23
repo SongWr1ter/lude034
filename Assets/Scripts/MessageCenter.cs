@@ -7,6 +7,7 @@ public enum MESSAGE_TYPE
 {
     GET_HURT,
     WIN,
+    LOSE,
 }
 public struct CommonMessage
 {
