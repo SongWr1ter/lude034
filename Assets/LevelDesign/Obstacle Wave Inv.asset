@@ -14,6 +14,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - rowIndex: 0
+    obstacleType: 0
+    speed: 5
+    existTime: 10
+  - rowIndex: 1
+    obstacleType: 1
+    speed: 5
+    existTime: 14
+  - rowIndex: 2
+    obstacleType: 2
+    speed: 5
+    existTime: 18
+  - rowIndex: 0
     obstacleType: 3
-    speed: 1
-    existTime: 4
+    speed: 5
+    existTime: 22
+  - rowIndex: 0
+    obstacleType: 1
+    speed: 5
+    existTime: 31
+  - rowIndex: 1
+    obstacleType: 1
+    speed: 5
+    existTime: 31.5
+  - rowIndex: 2
+    obstacleType: 1
+    speed: 5
+    existTime: 32
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 41
+  - rowIndex: 1
+    obstacleType: 3
+    speed: 5
+    existTime: 41.5
+  - rowIndex: 2
+    obstacleType: 3
+    speed: 5
+    existTime: 42
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 46
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 46.5
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 47
