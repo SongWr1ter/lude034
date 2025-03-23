@@ -53,3 +53,19 @@ MonoBehaviour:
     obstacleType: 2
     speed: 5
     existTime: 37
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 51
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 51.5
+  - rowIndex: 0
+    obstacleType: 3
+    speed: 5
+    existTime: 52
+  - rowIndex: 0
+    obstacleType: 4
+    speed: 5
+    existTime: 60
