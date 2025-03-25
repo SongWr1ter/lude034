@@ -15,3 +15,11 @@ MonoBehaviour:
   obstacles:
   - obstaclePrefab: {fileID: 3440173421228208297, guid: 93f6773979c7fe542b8d79b5a264195d, type: 3}
     obstacleType: 1
+  - obstaclePrefab: {fileID: 3440173421228208297, guid: a68e1cc67ccc28a4093daad0ab8a5d01, type: 3}
+    obstacleType: 0
+  - obstaclePrefab: {fileID: 3440173421228208297, guid: b90b9b3633c71784cba47bf5a3a2d1a0, type: 3}
+    obstacleType: 2
+  - obstaclePrefab: {fileID: 3440173421228208297, guid: 7697270abd5e06943a6467368de18e6c, type: 3}
+    obstacleType: 3
+  - obstaclePrefab: {fileID: 0}
+    obstacleType: 4

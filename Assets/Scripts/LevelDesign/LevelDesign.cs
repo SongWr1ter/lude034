@@ -14,6 +14,7 @@ public class LevelDesign : MonoBehaviour
     private Dictionary<ObstacleType,GameObject> obstaclePrefabDicts = new Dictionary<ObstacleType, GameObject>();
     private float timer;
     private int currentWaveIndex;
+    private bool winFlag;
     private void Awake()
     {
         for (int i = 0; i < transform.childCount; i++)
@@ -57,13 +58,24 @@ public class LevelDesign : MonoBehaviour
                 // 移动到下一个波次
                 currentWaveIndex++;
             }
+
+            if (currentWaveIndex >= waveList.Count && winFlag == false)
+            {
+                MessageCenter.SendMessage(new CommonMessage
+                {
+                    intParam = 0,
+                    content = null,
+                },MESSAGE_TYPE.WIN);
+                winFlag = true;
+            }
         }
         
     }
 
     public void SpawnObstacle(ObstacleType type,ObstacleWave.RowIndex rowIndex,float speed = 1.0f)
     {
+        if(type == ObstacleType.None) return;
         GameObject obj = Instantiate(obstaclePrefabDicts[type], spawnRows[(int)rowIndex].position, Quaternion.identity);
-        obj.GetComponent<ObstacleMove>().SetMoveSpeed(speed);
+        obj.GetComponent<ObstacleMove>().SetMoveSpeed(speed * Mathf.Sign(transform.localScale.x));
     }
 }

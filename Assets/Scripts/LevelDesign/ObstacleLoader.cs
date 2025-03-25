@@ -8,6 +8,7 @@ public enum ObstacleType
     Circle,
     Triangle,
     Rectangle,
+    None,
 }
 [CreateAssetMenu( menuName = "LevelDesign/ObstacleLoader")]
 public class ObstacleLoader : ScriptableObject
