@@ -35,7 +35,7 @@ public class LightCheckVFX : MonoBehaviour
                 MessageCenter.SendMessage(new CommonMessage
                 {
                     content = null,
-                    intParam = 0,
+                    intParam = 1,
                 },MESSAGE_TYPE.GET_HURT);
             }
         }

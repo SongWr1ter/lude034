@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum PlayerState
+{
+    Able,
+    Die,
+}
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField,Tooltip("速度")]
@@ -13,9 +18,10 @@ public class PlayerControl : MonoBehaviour
 
     private float currentHp;
     private CommonMessage HurtMessage;
+    private PlayerState currentState;
     
     private float GetHurt_TimeInterval = 0.5f;
-    private float GetHurtTimer = 0.0f;
+    [SerializeField]private float GetHurtTimer = 0.0f;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +29,7 @@ public class PlayerControl : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         MessageCenter.AddListener(GetHurt,MESSAGE_TYPE.GET_HURT);
         maxHp = 10.0f;
+        currentState = PlayerState.Able;
     }
     void GetHurt(CommonMessage mag)
     {
@@ -35,6 +42,7 @@ public class PlayerControl : MonoBehaviour
         if (currentHp <= 0)
         {
             currentHp = 0;
+            PlayerDie();
             //todo:游戏输了
         }
     }
@@ -45,6 +53,11 @@ public class PlayerControl : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rb2d.AddForce(h * moveSpeed * transform.right, ForceMode2D.Impulse);
         GetHurtTimer -= Time.deltaTime;
+    }
+
+    public void PlayerDie()
+    {
+        currentState = PlayerState.Die;
     }
 
 }
